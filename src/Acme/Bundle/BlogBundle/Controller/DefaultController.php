@@ -14,4 +14,13 @@ class DefaultController extends Controller
     {
         return $this->render('@AcmeBundleBlog/Default/index.html.twig');
     }
+
+    /**
+     * @Route("/blog_list")
+     */
+
+    public function blog_listAction()
+    {
+        return $this->render('@AcmeBundleBlog/Default/list.html.twig');
+    }
 }
